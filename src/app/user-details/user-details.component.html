@@ -1,0 +1,9 @@
+<div *ngIf="user">
+<h2>{{ user.name | uppercase }} Details</h2>
+<div><span>Id: </span>{{user.id}}</div>
+<div><span>Name: </span>{{user.name}}</div>
+<div><span>Date of Birth: </span>{{user.dob}}</div>
+<div><span>Age: </span>{{user.age}}</div>
+<button (click)="navigateBack()">Back</button>
+<button (click)="deleteUser(user.id)">Delete User</button>
+</div>

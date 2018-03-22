@@ -1,0 +1,6 @@
+<h2>All Users</h2>
+<div *ngFor="let user of users">
+<a routerLink="/user/{{user.id}}">
+<div><span>{{user.id}}</span> {{user.name}}</div>
+</a>
+</div>
